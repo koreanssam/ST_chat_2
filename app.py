@@ -14,6 +14,12 @@ if "user_input" not in st.session_state:
 
 # 메인 채팅 영역
 st.title("🤖 생기부 챗봇")
+st.markdown(
+    "<div style='text-align: center; font-size: 16px; margin-top: 20px;'>"
+    "<strong>경남교육청 국어 교사 이성원이 만들었습니다. koreanssam@koreanssam.kr</strong>"
+    "</div>",
+    unsafe_allow_html=True
+)
 
 # 채팅 컨테이너    
 chat_container = st.container(height=600)
