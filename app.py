@@ -24,7 +24,7 @@ st.markdown(
 st.divider()
 
 # 채팅 컨테이너    
-chat_container = st.container(height=250)
+chat_container = st.container(height=150)
 
 # 이전 메시지들 표시
 for message in st.session_state.messages:
