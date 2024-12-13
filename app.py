@@ -9,6 +9,8 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 if "available_document" not in st.session_state:
     st.session_state.available_document = available_document()
+if "user_input" not in st.session_state:
+    st.session_state.user_input = ""
 
 # 메인 채팅 영역
 st.title("🤖 생기부 챗봇")
@@ -25,6 +27,9 @@ for message in st.session_state.messages:
 user_input = st.chat_input("질문을 입력해주세요")
 
 if user_input:
+    # 사용자 입력을 세션 상태에 저장
+    st.session_state.user_input = user_input
+    
     # 사용자 메시지 추가
     st.session_state.messages.append({"role": "human", "content": user_input})
     
