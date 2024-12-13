@@ -28,7 +28,7 @@ st.markdown(
             padding: 25px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             width: 80%;
-            max-width: 100%;
+            max-width: 200%;
             text-align: center;
             transition: transform 0.3s ease;
             flex-direction: column; /* 추가된 부분 */
