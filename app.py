@@ -14,48 +14,8 @@ if "user_input" not in st.session_state:
 
 # 메인 채팅 영역
 st.title("🤖 생기부 챗봇")
-st.markdown(
-    """
-    <style>
-        .custom-card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 40px;
-            margin-bottom: 40px;
-            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            width: 80%;
-            max-width: 200%;
-            text-align: center;
-            transition: transform 0.3s ease;
-            flex-direction: column; /* 추가된 부분 */
-        }
-        .custom-card:hover {
-            transform: scale(1.05);
-        }
-        .custom-card strong {
-            font-size: 20px;
-            color: #333;
-        }
-        .custom-card a {
-            font-size: 16px;
-            color: #007bff;
-            text-decoration: none;
-        }
-        .custom-card a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    <div class='custom-card'>
-        <strong>경남교육청 국어 교사 이성원</strong>
-        <a href='mailto:koreanssam@koreanssam.kr'>koreanssam@koreanssam.kr</a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("[경남교육청 이성원](mailto:koreanssam@koreanssam.kr)", unsafe_allow_html=True)
+st.divider()
 
 # 채팅 컨테이너    
 chat_container = st.container(height=600)
