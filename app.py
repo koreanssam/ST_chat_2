@@ -31,6 +31,7 @@ st.markdown(
             max-width: 600px;
             text-align: center;
             transition: transform 0.3s ease;
+            flex-direction: column; /* 추가된 부분 */
         }
         .custom-card:hover {
             transform: scale(1.05);
@@ -50,7 +51,6 @@ st.markdown(
     </style>
     <div class='custom-card'>
         <strong>경남교육청 국어 교사 이성원</strong>
-        <br>
         <a href='mailto:koreanssam@koreanssam.kr'>koreanssam@koreanssam.kr</a>
     </div>
     """,
