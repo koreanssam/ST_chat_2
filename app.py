@@ -15,12 +15,17 @@ if "user_input" not in st.session_state:
 # 메인 채팅 영역
 st.title("🤖 생기부 챗봇")
 st.markdown(
-    "<div style='text-align: center; font-size: 16px; margin-top: 20px;'>"
-    "<strong>경남교육청 국어 교사 이성원이 만들었습니다. koreanssam@koreanssam.kr</strong>"
-    "</div>",
+    """
+    <div style='display: flex; justify-content: center; align-items: center; margin-top: 20px;'>
+        <div style='background-color: #f5f5f7; border-radius: 12px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 400px; text-align: center;'>
+            <strong style='font-size: 16px; color: #333;'>경남교육청 국어 교사 이성원이 만들었습니다.</strong>
+            <br>
+            <a href='mailto:koreanssam@koreanssam.kr' style='font-size: 14px; color: #007aff; text-decoration: none;'>koreanssam@koreanssam.kr</a>
+        </div>
+    </div>
+    """,
     unsafe_allow_html=True
 )
-
 # 채팅 컨테이너    
 chat_container = st.container(height=600)
 
