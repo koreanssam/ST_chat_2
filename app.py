@@ -14,7 +14,8 @@ if "user_input" not in st.session_state:
 
 # 메인 채팅 영역
 st.title("🤖 생기부 챗봇")
-st.markdown("[경남교육청 이성원](mailto:koreanssam@koreanssam.kr)", unsafe_allow_html=True)
+st.header("2024 학생부 기재요령 문서와 학교생활기록부 종합지원포털의 질의응답을 토대로 답변합니다. 100% 신뢰할 수는 없으며, 답변을 참고하시되 기재요령 문서를 재확인하시길 바랍니다.")
+st.markdown("[경남교육청 이성원 제작.](mailto:koreanssam@koreanssam.kr)", unsafe_allow_html=True)
 st.divider()
 
 # 채팅 컨테이너    
