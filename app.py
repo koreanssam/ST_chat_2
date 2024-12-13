@@ -54,8 +54,6 @@ with col1:
             
         with chat_container.chat_message("ai"):
             with st.spinner("생각하는 중..."):
-                full_response = ""
-                for chunk in chat_bot(system_prompt=st.secrets["prompt1"], use_docs=st.session_state.available_document):
-                    full_response += chunk
-                    st.markdown(chunk)  # 누적된 전체 응답 대신 현재 청크만 표시
+                full_response = chat_bot(system_prompt=st.secrets["prompt1"], use_docs=st.session_state.available_document)
+                st.markdown(full_response)  # 전체 응답을 한 번에 표시
                 st.session_state.messages.append({"role": "ai", "content": full_response})
